@@ -12,7 +12,9 @@ class Triangle
     if @side_one == @side_two == @side_three && @side_one != 0
       :equilateral
     else
-      
+      nil
+    end
+
 
   end
 end
