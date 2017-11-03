@@ -12,7 +12,8 @@ class Triangle
     if @side_one <= 0 || @side_two <= 0 || @side_three <= 0
       begin
         raise TriangleError
-      rescue "saving the day"
+      rescue 
+        puts "saving the day"
       end
     elsif @side_one == @side_two && @side_one == @side_three
       :equilateral
