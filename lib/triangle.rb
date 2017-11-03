@@ -10,11 +10,7 @@ class Triangle
 
   def kind
     if @side_one <= 0 || @side_two <= 0 || @side_three <= 0
-      begin
         raise TriangleError
-      rescue
-        puts "saving the day"
-      end
     elsif @side_one == @side_two && @side_one == @side_three
       :equilateral
     elsif @side_one == @side_two || @side_one == @side_three || @side_three == @side_two
