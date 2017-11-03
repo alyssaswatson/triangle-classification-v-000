@@ -14,8 +14,8 @@ class Triangle
         raise TriangleError
       rescue TriangleError => error
           puts error.message
-      end    
-    elsif @side_one == @side_two && @side_one == @side_three && @side_one != 0
+      end
+    elsif @side_one == @side_two && @side_one == @side_three
       :equilateral
     elsif @side_one == @side_two || @side_one == @side_three || @side_three == @side_two
       :isosceles
